@@ -1,0 +1,137 @@
+.features {
+  position: relative;
+}
+
+.features__title {
+  font-family: "Gilroy 700", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  text-transform: uppercase;
+  color: $main-color;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin-top: 6px;
+    background-color: $accent-color;
+  }
+}
+
+.features__item-mobile {
+  font-family: "Gilroy 100", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: calc(15 / 13);
+  color: $main-color;
+}
+
+.features__list-mobile {
+  width: 100%;
+  background-color: transparent;
+  margin-top: 36px;
+  border-top: 1px solid #1a222222;
+  border-bottom: 1px solid #1a222222;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.features__list {
+  display: none;
+}
+
+.features__link {
+  display: none;
+}
+
+.features__box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 36px;
+
+  &-left {
+    width: 50%;
+    margin-right: 0px;
+  }
+
+  &-right {
+    position: relative;
+    width: 50%;
+    min-height: 144px;
+    background-color: $bg-color;
+  }
+}
+
+.feature__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.feature__title-list {
+  font-family: "Gilroy 700", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: calc(18 / 15);
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.feature__text {
+  font-family: "Gilroy 100", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.55;
+  color: $main-color;
+  margin-top: 10px;
+}
+
+.features__submit {
+  margin-top: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 72px;
+}
+
+.features__price {
+  font-family: "Gilroy 100", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: calc(13 / 11);
+  color: $main-color;
+  text-align: center;
+
+  &-acc {
+    font-family: "Gilroy 700", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: $main-color;
+  }
+}
+
+.features__btn {
+  min-width: 196px;
+  background: $second-color;
+  border: 1px solid $accent-color;
+  border-radius: 100px;
+  padding: 12px 63px;
+  font-family: "Gilroy 700", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: calc(13 / 11);
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.feature__img-bottom {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.16));
+}

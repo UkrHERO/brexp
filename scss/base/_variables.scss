@@ -1,0 +1,37 @@
+$main-color: #222222;
+$second-color: #ffffff;
+$accent-color: #ff312e;
+$bg-color: #f2f2f2;
+
+body {
+  font-family: Gilroy, sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+
+.active-link {
+  color: $accent-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+}

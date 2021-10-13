@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header__container">
+            <address class="address">
+                <p class="address__text">г. Киев, ул. Шевченка, 26</p>
+                <button type="button" class="address__btn">Посмотреть на карте</button>
+            </address>
+
+                    <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="30" height="20" aria-label="Переключатель мобильного меню">
+                            <!-- <use class="icon-cross" href="./images/sprite.svg#icon-cloxe-btn">
+                    
+                            </use> -->
+                            <use class="icon-menu" href="./images/sprite.svg#icon-menu-btn"></use>
+                        </svg>
+                    </button>
+                    
+                    <div class="menu-container js-menu-container" id="mobile-menu">
+                        <button class="menu-button js-close-menu">
+                            <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+                                <use class="icon-cross" href="./images/sprite.svg#icon-cloxe-btn">
+                    
+                                </use>
+                    
+                            </svg>
+                        </button>
+                    
+                        <ul class="mobile-menu">
+                            <li class="header-item">
+                                <a class="header-link mobile-menu-link" href="./index.html"><span class="active-link">Главная</span></a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link mobile-menu-link" href="#">О компании</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link mobile-menu-link" href="#">Услуги</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link mobile-menu-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link mobile-menu-link" href="#">Обучение</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-link mobile-menu-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                        <div class="header-contacts mobile-contacts">
+                            <a class="contact mobile-contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a><br>
+                            <a class="contact mobile-contacts-mail" href="mailto:info@devstudio.com">Написать нам</a>
+                        </div>
+                                <a class="logo" href="./index.html">BE</a>
+
+                    <div class="header-box">
+                        <nav>
+                            <ul class="list header-nav">
+                                <li class="header-item">
+                                    <div class="active-box"><a class="header-link" href="./index.html"><span
+                                                class="active-link">Главная</span></a></div>
+                                </li>
+                                <li class="header-item">
+                                    <a class="header-link mobile-menu-link" href="#">О компании</a>
+                                </li>
+                                <li class="header-item">
+                                    <a class="header-link mobile-menu-link" href="#">Услуги</a>
+                                </li>
+                                <li class="header-item">
+                                    <a class="header-link mobile-menu-link" href="#">Отзывы</a>
+                                </li>
+                                <li class="header-item">
+                                    <a class="header-link mobile-menu-link" href="#">Обучение</a>
+                                </li>
+                                <li class="header-item">
+                                    <a class="header-link mobile-menu-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="section hero">
+            <div class="container">
+                <div class="left-row">
+                <h1 class="hero__title">супер брови от мастеров brow Expert</h1>
+                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </div>
+
+            <div class="right-row">
+                <img class="hero__img" src="./images/hero-woman-mob@1x.png" alt="Woman" width="170" height="170"
+                srcset="./images/hero-woman-mob@1x.png 1x,
+                        ./images/hero-woman-mob@2x.png 2x">
+            </div>
+            </div>
+        </section>
+
+        <section class="section desc">
+            <div class="container">
+                <h2 class="desc__title">это наша работа</h2>
+                <p class="desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <ul class="desc__list">
+                    <li class="desc__item"><span class="desc__text-acc">5</span><br>выдающихся мастеров</li>
+                    <li class="desc__item"><span class="desc__text-acc">1 062</span><br>выдающихся мастеров</li>
+                    <li class="desc__item"><span class="desc__text-acc">35</span><br>минут до результата</li>
+                    <li class="desc__item"><span class="desc__text-acc">10</span><br>основных услуг</li>
+                </ul>
+                <a class="desc__link" href="">Узнать подробности<span class="desc__decor">&#10145;</span></a>
+                <img src="./images/desc-mob@1x.png" alt="Description" class="desc__img" width="146" height="56"
+                srcset="./images/desc-mob@1x.png 1x,
+                        ./images/desc-mob@2x.png 2x">
+            </div>
+        </section>
+
+        <section class="section features">
+            <div class="container">
+                <h2 class="features__title">что мы делаем</h2>
+                <div class="features__box">
+                    <select class="features__list-mobile" name="products" id="products">
+                        <option class="features__item-mobile" value="1">Дизайн бровей</option>
+                        <option class="features__item-mobile" value="2">Дизайн и окрашивание бровей</option>
+                        <option class="features__item-mobile" value="3">Окрашивание ресниц</option>
+                        <option class="features__item-mobile" value="4">SPA-окрашивание ресниц хной</option>
+                        <option class="features__item-mobile" value="5">Тридинг лицевых зон</option>
+                        <option class="features__item-mobile" value="6">Восковая эпиляция лица</option>
+                        <option class="features__item-mobile" value="7">Ламинирование ресниц</option>
+                        <option class="features__item-mobile" value="8">Ботокс ресниц</option>
+                        <option class="features__item-mobile" value="9">Наращивание ресниц</option>
+                    </select>
+                    <ul class="features__list">
+                        <li class="features__item">Дизайн бровей</li>
+                        <li class="features__item">Дизайн и окрашивание бровей</li>
+                        <li class="features__item">Окрашивание ресниц</li>
+                        <li class="features__item">SPA-окрашивание ресниц хной</li>
+                        <li class="features__item">Тридинг лицевых зон</li>
+                        <li class="features__item">Восковая эпиляция лица</li>
+                        <li class="features__item">Ламинирование ресниц</li>
+                        <li class="features__item">Ботокс ресниц</li>
+                        <li class="features__item">Наращивание ресниц</li>
+                    </ul>
+                    <a class="features__link" href="">Посмотреть все услуги<span>&#10145;</span></a>
+                </div>
+
+                <div class="features__box">
+                    <div class="features__box-left">
+                        <h3 class="feature__title-list">дизайн бровей</h3>
+                        <p class="feature__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+
+                    </div>
+                    <div class="features__box-right">
+                        <img src="./images/features-woman-mob@1x.png" alt="" class="feature__img" width="160" height="160"
+                        srcset="./images/features-woman-mob@1x.png 1x,
+                        ./images/features-woman-mob@2x.png 2x">
+                    </div>
+                    <div class="features__submit">
+                        <p class="features__price"><span class="features__price-acc">300 ₽</span><br>за сеанс</p>
+                        <button type="button" class="features__btn">Записаться</button>
+                    </div>
+                </div>
+                <img src="./images/features-mob@1x.png" alt="botle" class="feature__img-bottom" width="138" height="138"
+                 srcset="./images/features-mob@1x.png 1x,
+                        ./images/features-mob@2x.png 2x">
+            </div>
+        </section>
+
+        <section class="section school">
+            <div class="container">
+                <h2 class="school__title">школа мастеров</h2>
+                <p class="school__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <ul class="school__list">
+                    <li class="school__item">
+                        <div class="school__box"><span class="school__acc">1</span></div>
+                        <div class="school__desc">
+                            <h3 class="school__title-list">Учитесь</h3>
+                            <p class="school__text-list">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                        </div>
+                    </li>
+                    <li class="school__item">
+                        <div class="school__box"><span class="school__acc">2</span></div>
+                        <div class="school__desc">
+                            <h3 class="school__title-list">практикуйтесь</h3>
+                            <p class="school__text-list">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            </p>
+                        </div>
+                    </li>
+                    <li class="school__item">
+                        <div class="school__box"><span class="school__acc">3</span></div>
+                        <div class="school__desc">
+                            <h3 class="school__title-list">советуйтесь</h3>
+                            <p class="school__text-list">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="school__btn-box">
+                <button type="button" class="school__btn">Записаться</button>
+                </div>
+                <img src="./images/school-mob@1x.png" alt="botle" class="school__img-bottom" width="138" height="138" 
+                srcset="./images/school-mob@1x.png 1x,
+                    ./images/school-mob@2x.png 2x">
+            </div>
+        </section>
+
+        <section class="section feedback">
+            <div class="container">
+                <h2 class="feedback__title">слова о нас</h2>
+                <div class="feedback__box">
+                    <div class="feedback__left">
+                        <img src="./images/feedback-woman-mob@1x.jpg" alt="woman" class="feedback__img" width="48" height="48" 
+                        srcset="./images/feedback-woman-mob@1x.jpg 1x,
+                            ./images/feedback-woman-mob@2x.jpg 2x">
+                    </div>
+                    <div class="feedback__right">
+                        <h3 class="feedback__name">анна ходокова</h3>
+                        <p class="feedback__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                    </div>
+                </div>
+                <img src="./images/feedback-mob@1x.png" alt="botle" class="feedback__img-bottom" width="138" height="138" 
+                srcset="./images/feedback-mob@1x.png 1x,
+                    ./images/feedback-mob@2x.png 2x">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <h2 class="footer__title">всегда на связи</h2>
+            <div class="address-box">
+            <address>
+                <p class="address-footer">г. Киев, ул. Шевченка, 26</p>
+                <p>Ежедневно с 8:00 до 20:00</p>
+            </address>
+            </div>
+            <div class="tel-box">
+            <a class="contact mobile-contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <p>Запись по телефону</p>
+            </div>
+            <div class="mail-box"></div>
+            <a class="contact mobile-contacts-mail" href="mailto:info@devstudio.com">browexpert@mail.ru</a>
+            <p>Для вопросов и предложений</p>
+
+            <div class="copyright">
+                <p>© Brow Expert 2017–2018</p>
+            </div>
+
+            <div class="social">
+                <a href="" class="social__link">
+                    <svg width="20" height="11" aria-label="VK">
+                    <use class="icon-cross" href="./images/sprite.svg#icon-vk">
+                
+                    </use>
+                
+                </svg></a>
+                <a href="" class="social__link">
+                    <svg width="20" height="20" aria-label="Instagram">
+                    <use class="icon-cross" href="./images/sprite.svg#icon-insta">
+                
+                    </use>
+                
+                </svg></a>
+            </div>
+
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

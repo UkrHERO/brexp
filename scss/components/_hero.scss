@@ -1,0 +1,56 @@
+.section {
+  margin-top: 50px;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.hero .container {
+  display: flex;
+}
+
+.left-row {
+  width: 50%;
+  margin-right: 16px;
+}
+
+.right-row {
+  position: relative;
+  width: 50%;
+  min-height: 144px;
+  background-color: $bg-color;
+}
+
+.hero__img {
+  position: absolute;
+  left: -37px;
+  bottom: 0;
+}
+
+.hero__title {
+  font-family: "Gilroy 700", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.hero__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin-top: 10px;
+  background-color: $accent-color;
+}
+
+.hero__text {
+  margin-top: 14px;
+  font-family: "Gilroy 100", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: calc(13 / 11);
+  color: $main-color;
+}
