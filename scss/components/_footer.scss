@@ -12,6 +12,10 @@
   text-transform: uppercase;
   color: $second-color;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 84px;
+    margin-bottom: 80px;
+  }
 
   &::after {
     content: "";
@@ -22,6 +26,19 @@
     background-color: $accent-color;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      width: 102px;
+      height: 6px;
+      margin-top: 25px;
+    }
+  }
+}
+
+.footer__contacts {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -32,6 +49,11 @@
   line-height: calc(15 / 13);
   color: $main-color;
   margin-bottom: 6px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: calc(26 / 22);
+  }
 }
 
 .address-footer + p {
@@ -41,13 +63,36 @@
   font-size: 11px;
   line-height: calc(13 / 11);
   color: $main-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+    line-height: calc(18 / 15);
+  }
 }
+
+.mobile-contacts-tel {
+  font-family: "Gilroy 700", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: calc(15 / 13);
+  color: $main-color;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: calc(26 / 22);
+  }
+}
+
 .mobile-contacts-mail {
   font-family: "Gilroy 700", sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: calc(15 / 13);
   color: $main-color;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: calc(26 / 22);
+  }
 }
 
 .mobile-contacts-mail + p {
@@ -58,6 +103,10 @@
   line-height: calc(13 / 11);
   color: $main-color;
   margin-top: 6px;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+    line-height: calc(18 / 15);
+  }
 }
 
 .mobile-contacts-tel + p {
@@ -68,6 +117,10 @@
   line-height: calc(13 / 11);
   color: $main-color;
   margin-top: 6px;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+    line-height: calc(18 / 15);
+  }
 }
 
 .address-box,
@@ -76,11 +129,22 @@
   margin-top: 36px;
 }
 
+.copyright__mobile {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
 .copyright {
   margin-top: 36px;
   border-top: 1px solid #1a222222;
   border-bottom: 1px solid #1a222222;
   padding: 16px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+  }
 
   & p {
     font-family: "Gilroy 100", sans-serif;
@@ -88,6 +152,10 @@
     font-size: 11px;
     line-height: calc(13 / 11);
     color: $main-color;
+    @media screen and (min-width: 1200px) {
+      font-size: 15px;
+      line-height: calc(18 / 15);
+    }
   }
 }
 
@@ -101,4 +169,39 @@
 
 .social__link:not(:last-child) {
   margin-right: 18px;
+}
+
+.copyright__main {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    border-top: 1px solid #1a222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.footer__link {
+  font-family: "Gilroy 100", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: calc(18 / 15);
+  color: $main-color;
+}
+
+.social__text {
+  font-family: "Gilroy 100", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: calc(18 / 15);
+  color: $main-color;
+  margin-right: 28px;
 }

@@ -1,5 +1,8 @@
 .section {
   margin-top: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 80px;
+  }
 }
 
 .container {
@@ -8,11 +11,18 @@
 
 .hero .container {
   display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    // align-items: baseline;
+  }
 }
 
 .left-row {
   width: 50%;
   margin-right: 16px;
+  @media screen and (min-width: 1200px) {
+    width: 455px;
+  }
 }
 
 .right-row {
@@ -20,6 +30,10 @@
   width: 50%;
   min-height: 144px;
   background-color: $bg-color;
+  @media screen and (min-width: 1200px) {
+    width: 486px;
+    height: 486px;
+  }
 }
 
 .hero__img {
@@ -32,9 +46,13 @@
   font-family: "Gilroy 700", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
+  line-height: calc(21 / 18);
   text-transform: uppercase;
   color: $main-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 60px;
+    line-height: calc(70 / 60);
+  }
 }
 
 .hero__title::after {
@@ -44,6 +62,11 @@
   height: 4px;
   margin-top: 10px;
   background-color: $accent-color;
+  @media screen and (min-width: 1200px) {
+    width: 78px;
+    height: 6px;
+    margin-top: 14px;
+  }
 }
 
 .hero__text {
@@ -53,4 +76,28 @@
   font-size: 11px;
   line-height: calc(13 / 11);
   color: $main-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+    line-height: 1.47;
+    margin-top: 24px;
+  }
+}
+
+.main__btn {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-top: 24px;
+    min-width: 240px;
+    background: transparent;
+    border: 1px solid $accent-color;
+    border-radius: 100px;
+    padding: 14px 63px;
+    font-family: "Gilroy 700", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: calc(15 / 13);
+    text-transform: uppercase;
+    color: $accent-color;
+  }
 }

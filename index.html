@@ -36,7 +36,7 @@
                             </svg>
                         </button>
                     
-                        <ul class="mobile-menu">
+                        <ul class="mobile-menu mobile-menu-list">
                             <li class="header-item">
                                 <a class="header-link mobile-menu-link" href="./index.html"><span class="active-link">Главная</span></a>
                             </li>
@@ -59,10 +59,10 @@
                     
                     </div>
                         <div class="header-contacts mobile-contacts">
-                            <a class="contact mobile-contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a><br>
-                            <a class="contact mobile-contacts-mail" href="mailto:info@devstudio.com">Написать нам</a>
+                            <a class="contact header__mobile-contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a><br>
+                            <a class="contact header__mobile-contacts-mail" href="mailto:info@devstudio.com">Написать нам</a>
                         </div>
-                                <a class="logo" href="./index.html">BE</a>
+                                <a class="logo logo-mobile" href="./index.html">BE</a>
 
                     <div class="header-box">
                         <nav>
@@ -77,6 +77,7 @@
                                 <li class="header-item">
                                     <a class="header-link mobile-menu-link" href="#">Услуги</a>
                                 </li>
+                                <li class="header-item"><a class="logo logo-main" href="./index.html">BE</a></li>
                                 <li class="header-item">
                                     <a class="header-link mobile-menu-link" href="#">Отзывы</a>
                                 </li>
@@ -100,6 +101,7 @@
                 <div class="left-row">
                 <h1 class="hero__title">супер брови от мастеров brow Expert</h1>
                 <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <button type="button" class="main__btn">Записаться</button>
             </div>
 
             <div class="right-row">
@@ -130,7 +132,8 @@
         <section class="section features">
             <div class="container">
                 <h2 class="features__title">что мы делаем</h2>
-                <div class="features__box">
+                <div class="features__wraper--main">
+                <div class="features__wraper">
                     <select class="features__list-mobile" name="products" id="products">
                         <option class="features__item-mobile" value="1">Дизайн бровей</option>
                         <option class="features__item-mobile" value="2">Дизайн и окрашивание бровей</option>
@@ -161,6 +164,16 @@
                         <h3 class="feature__title-list">дизайн бровей</h3>
                         <p class="feature__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                        <p class="feature__text feature__text-main"> Nemo enim ipsam
+                            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. 
+                        </p>
+                        <p class="feature__text feature__text-main">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <div class="features__submit-main">
+                            <p class="features__price"><span class="features__price-acc">300 ₽</span><br>за сеанс</p>
+                            <button type="button" class="features__btn">Записаться</button>
+                        </div>
 
                     </div>
                     <div class="features__box-right">
@@ -168,11 +181,13 @@
                         srcset="./images/features-woman-mob@1x.png 1x,
                         ./images/features-woman-mob@2x.png 2x">
                     </div>
-                    <div class="features__submit">
+                    
+                    <div class="features__submit features__submit-mobile">
                         <p class="features__price"><span class="features__price-acc">300 ₽</span><br>за сеанс</p>
                         <button type="button" class="features__btn">Записаться</button>
                     </div>
                 </div>
+                    </div>
                 <img src="./images/features-mob@1x.png" alt="botle" class="feature__img-bottom" width="138" height="138"
                  srcset="./images/features-mob@1x.png 1x,
                         ./images/features-mob@2x.png 2x">
@@ -228,8 +243,12 @@
                     </div>
                     <div class="feedback__right">
                         <h3 class="feedback__name">анна ходокова</h3>
-                        <p class="feedback__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        <p class="feedback__text feedback__text-mobile">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+                        <p class="feedback__text feedback__text-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
                 <img src="./images/feedback-mob@1x.png" alt="botle" class="feedback__img-bottom" width="138" height="138" 
@@ -243,6 +262,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <h2 class="footer__title">всегда на связи</h2>
+            <div class="footer__contacts">
             <div class="address-box">
             <address>
                 <p class="address-footer">г. Киев, ул. Шевченка, 26</p>
@@ -253,9 +273,13 @@
             <a class="contact mobile-contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
             <p>Запись по телефону</p>
             </div>
-            <div class="mail-box"></div>
+            <div class="mail-box">
             <a class="contact mobile-contacts-mail" href="mailto:info@devstudio.com">browexpert@mail.ru</a>
             <p>Для вопросов и предложений</p>
+            </div>
+            </div>
+
+            <div class="copyright__mobile">
 
             <div class="copyright">
                 <p>© Brow Expert 2017–2018</p>
@@ -277,6 +301,55 @@
                 
                 </svg></a>
             </div>
+            </div>
+
+            
+                <div class="copyright__main">
+                
+                    <div class="copyright">
+                        <p>© Brow Expert 2017–2018</p>
+                    </div>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">О компании</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Услуги</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Обучение</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="social">
+                        <p class="social__text">Мы в соцсетях</p>
+                        <a href="" class="social__link">
+                            <svg width="20" height="11" aria-label="VK">
+                                <use class="icon-cross" href="./images/sprite.svg#icon-vk">
+                    
+                                </use>
+                    
+                            </svg></a>
+                        <a href="" class="social__link">
+                            <svg width="20" height="20" aria-label="Instagram">
+                                <use class="icon-cross" href="./images/sprite.svg#icon-insta">
+                    
+                                </use>
+                    
+                            </svg></a>
+                    </div>
+                    
+        
 
         </div>
     </footer>
