@@ -7,6 +7,7 @@
 
 .container {
   padding: 0 10px;
+  position: relative;
 }
 
 .hero .container {
@@ -40,6 +41,9 @@
   position: absolute;
   left: -37px;
   bottom: 0;
+  @media screen and (min-width: 1200px) {
+    left: -120px;
+  }
 }
 
 .hero__title {

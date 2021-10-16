@@ -404,6 +404,7 @@ a {
 
 .container {
   padding: 0 10px;
+  position: relative;
 }
 
 .hero .container {
@@ -441,6 +442,11 @@ a {
   position: absolute;
   left: -37px;
   bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero__img {
+    left: -120px;
+  }
 }
 
 .hero__title {
@@ -661,11 +667,16 @@ a {
 .desc__img {
   position: absolute;
   left: 50%;
-  bottom: -30px;
+  bottom: -65px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.16));
+}
+@media screen and (min-width: 1200px) {
+  .desc__img {
+    bottom: -170px;
+  }
 }
 
 .features {
@@ -745,7 +756,7 @@ a {
   font-size: 17px;
   line-height: calc(17 / 20);
   color: #222222;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .features__link {
@@ -822,6 +833,11 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+  .feature__img {
+    right: 50px;
+  }
 }
 
 .feature__title-list {
@@ -944,11 +960,17 @@ a {
   position: absolute;
   z-index: 5;
   left: 50%;
-  bottom: -40px;
+  bottom: -120px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.16));
+}
+@media screen and (min-width: 1200px) {
+  .feature__img-bottom {
+    left: 10%;
+    bottom: -350px;
+  }
 }
 
 .school {
@@ -1164,11 +1186,17 @@ a {
   position: absolute;
   z-index: 5;
   left: 50%;
-  bottom: -70px;
+  bottom: -120px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.16));
+}
+@media screen and (min-width: 1200px) {
+  .school__img-bottom {
+    left: 87%;
+    bottom: -270px;
+  }
 }
 
 .feedback {
@@ -1284,11 +1312,31 @@ a {
   position: absolute;
   z-index: 5;
   left: 50%;
-  bottom: -35px;
+  bottom: -100px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.16));
+}
+@media screen and (min-width: 1200px) {
+  .feedback__img-bottom {
+    left: 7%;
+    bottom: -290px;
+  }
+}
+
+.feedback__img-bottom--right {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .feedback__img-bottom--right {
+    width: 600px;
+    height: 600px;
+    display: block;
+    position: absolute;
+    right: -15%;
+    bottom: -330px;
+  }
 }
 
 .footer {

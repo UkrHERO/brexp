@@ -105,9 +105,11 @@
             </div>
 
             <div class="right-row">
-                <img class="hero__img" src="./images/hero-woman-mob@1x.png" alt="Woman" width="170" height="170"
-                srcset="./images/hero-woman-mob@1x.png 1x,
-                        ./images/hero-woman-mob@2x.png 2x">
+                        <picture class="hero__img">
+                            <source srcset="./images/hero-woman-mob@1x.png 1x, ./images/hero-woman-mob@2x.png 2x" media="(max-width: 1199px)"/>
+                            <source srcset="./images/hero-woman@1x.png, ./images/hero-woman@2x.png 2x" media="(min-width: 1200px)"/>
+                            <img src="./images/hero-woman-mob@1x.png" alt="Woman" />
+                        </picture>
             </div>
             </div>
         </section>
@@ -123,9 +125,11 @@
                     <li class="desc__item"><span class="desc__text-acc">10</span><br>основных услуг</li>
                 </ul>
                 <a class="desc__link" href="">Узнать подробности<span class="desc__decor">&#10145;</span></a>
-                <img src="./images/desc-mob@1x.png" alt="Description" class="desc__img" width="146" height="56"
-                srcset="./images/desc-mob@1x.png 1x,
-                        ./images/desc-mob@2x.png 2x">
+                        <picture class="desc__img">
+                            <source srcset="./images/desc-mob@1x.png 1x, ./images/desc-mob@2x.png 2x" media="(max-width: 1199px)" />
+                            <source srcset="./images/desc@1x.png, ./images/desc@2x.png 2x" media="(min-width: 1200px)" />
+                            <img src="./images/desc-mob@1x.png" alt="Description" />
+                        </picture>
             </div>
         </section>
 
@@ -177,9 +181,11 @@
 
                     </div>
                     <div class="features__box-right">
-                        <img src="./images/features-woman-mob@1x.png" alt="" class="feature__img" width="160" height="160"
-                        srcset="./images/features-woman-mob@1x.png 1x,
-                        ./images/features-woman-mob@2x.png 2x">
+                        <picture class="feature__img">
+                            <source srcset="./images/features-woman-mob@1x.png 1x, ./images/features-woman-mob@2x.png 2x" media="(max-width: 1199px)" />
+                            <source srcset="./images/features-woman@1x.png, ./images/features-woman@2x.png 2x" media="(min-width: 1200px)" />
+                            <img src="./images/features-woman-mob@1x.png" alt="Description" />
+                        </picture>
                     </div>
                     
                     <div class="features__submit features__submit-mobile">
@@ -188,9 +194,12 @@
                     </div>
                 </div>
                     </div>
-                <img src="./images/features-mob@1x.png" alt="botle" class="feature__img-bottom" width="138" height="138"
-                 srcset="./images/features-mob@1x.png 1x,
-                        ./images/features-mob@2x.png 2x">
+                        <picture class="feature__img-bottom">
+                            <source srcset="./images/features-mob@1x.png 1x, ./images/features-mob@2x.png 2x"
+                                media="(max-width: 1199px)" />
+                            <source srcset="./images/features@1x.png, ./images/features@2x.png 2x" media="(min-width: 1200px)" />
+                            <img src="./images/features-mob@1x.png" alt="botle" />
+                        </picture>
             </div>
         </section>
 
@@ -226,9 +235,11 @@
                 <div class="school__btn-box">
                 <button type="button" class="school__btn">Записаться</button>
                 </div>
-                <img src="./images/school-mob@1x.png" alt="botle" class="school__img-bottom" width="138" height="138" 
-                srcset="./images/school-mob@1x.png 1x,
-                    ./images/school-mob@2x.png 2x">
+                    <picture class="school__img-bottom">
+                        <source srcset="./images/school-mob@1x.png 1x, ./images/school-mob@2x.png 2x" media="(max-width: 1199px)" />
+                        <source srcset="./images/school@1x.png, ./images/school@2x.png 2x" media="(min-width: 1200px)" />
+                        <img src="./images/school-mob@1x.png" alt="botle" />
+                    </picture>
             </div>
         </section>
 
@@ -251,9 +262,16 @@
                         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
-                <img src="./images/feedback-mob@1x.png" alt="botle" class="feedback__img-bottom" width="138" height="138" 
-                srcset="./images/feedback-mob@1x.png 1x,
-                    ./images/feedback-mob@2x.png 2x">
+                    <picture class="feedback__img-bottom">
+                        <source srcset="./images/feedback-mob@1x.png 1x, ./images/feedback-mob@2x.png 2x" media="(max-width: 1199px)" />
+                        <source srcset="./images/feedback@1x.png, ./images/feedback@2x.png 2x" media="(min-width: 1200px)" />
+                        <img src="./images/feedback-mob@1x.png" alt="botle" />
+                    </picture>
+                    <picture class="feedback__img-bottom--right">
+                        
+                        <source srcset="./images/brushes@1x.png 1x, ./images/brushes@2x.png 2x" media="(min-width: 1200px)" />
+                        <img src="./images/brushes@1x.png" alt="botle" />
+                    </picture>
             </div>
         </section>
     </main>
